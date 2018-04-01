@@ -5,3 +5,50 @@ homeassistant:
   elevation: !secret homeassistant_elevation
   unit_system: metric
   time_zone: Australia/Brisbane
+  
+  customize: !include_dir_merge_named customize
+  customize_domain:
+    automation:
+      initial_state: 'on'
+  customize_glob:
+    "automation.*watchdog*":
+      icon: mdi:timer
+    "sensor.dark_sky_*":
+      homebridge_hidden: true
+
+  packages: !include_dir_named packages
+
+frontend:
+  javascript_version: latest
+
+config:
+
+http:
+  base_url: !secret http_base_url
+
+updater:
+  include_used_components: true
+
+discovery:
+
+history:
+
+logbook:
+
+map:
+
+sun:
+
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+
+tts:
+  - platform: amazon_polly
+    aws_access_key_id: !secret tts_aws_access_key 
+    aws_secret_access_key: !secret tts_asw_secret
+    voice: Emma
+    text_type: ssml
+    cache: True
+
+cloud:

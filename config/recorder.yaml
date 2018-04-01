@@ -1,2 +1,2 @@
 recorder:
-  db_url: !secrets recorder_db_url
+  db_url: !secret recorder_db_url

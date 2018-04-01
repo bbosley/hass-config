@@ -52,3 +52,18 @@ tts:
     cache: True
 
 cloud:
+
+device_tracker:
+  - platform: unifi
+    host: unifi.foxthree.net
+    username: hass
+    password: !secret dt_unifi
+    new_device_defaults:
+      track_new_devices: False
+      hide_if_away: False
+
+sensor: !include_dir_merge_list sensor
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

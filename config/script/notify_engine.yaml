@@ -1,0 +1,29 @@
+######################################################################################################
+  # action:
+    # service: script.notify_engine
+    # data_template:
+      # value1: 'Startup: Home Assistant is Up and Running!'
+      # value2: ''
+      # value3: "{{ trigger.to_state.state }}"
+      # who: "beau | | all"
+######################################################################################################
+notify_engine:
+  sequence:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: input_boolean.text_notifications
+          state: 'on'
+
+    - service_template: >
+          {% if who == 'beau' %}
+            notify.ios_beaus_iphone
+          {% elif who == 'all' %}
+            notify.ios_all
+          {% else %}
+            notify.ios_all
+          {% endif %}
+      data_template:
+        message: "{{ value1 }} {{ value2 }} {{ value3 }}"
+        data:
+          subtitle: "Home Assistant Notify"

@@ -1,0 +1,2 @@
+recorder:
+  db_url: !secrets recorder_db_url

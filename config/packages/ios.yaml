@@ -1,1 +1,8 @@
+notify:
+  - platform: ios
+  - name: ios_all
+    platform: group
+    services:
+      - service: ios_beaus_iphone
+
 ios:

@@ -5,4 +5,10 @@ notify:
     services:
       - service: ios_beaus_iphone
 
+group:
+  Phones:
+    entities:
+      - sensor.beaus_iphone_battery_level
+      - sensor.beaus_iphone_battery_state
+
 ios:

@@ -43,7 +43,7 @@
 
 
 
-sensor.:beaus_iphone_battery_level
+sensor.beaus_iphone_battery_level
   friendly_name: 'Beau iPhone X Battery Level'
 
   hidden: False

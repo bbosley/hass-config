@@ -65,6 +65,7 @@ device_tracker:
       track_new_devices: False
       hide_if_away: False
 
+logger: !include logger.yaml
 recorder: !include recorder.yaml
 
 group: !include_dir_merge_named group

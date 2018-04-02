@@ -40,15 +40,15 @@
 #  hidden: False
 #  homebridge_hidden: True
 #  icon: mdi:fire
-
-
-
-sensor.beaus_iphone_battery_level
-  friendly_name: 'Beau iPhone X Battery Level'
-
-  hidden: False
-  homebridge_hidden: True
-  icon: mdi:battery-40
+#
+#
+#
+#sensor.beaus_iphone_battery_level
+#  friendly_name: 'Beau iPhone X Battery Level'
+#
+#  hidden: False
+#  homebridge_hidden: True
+#  icon: mdi:battery-40
 
 
 

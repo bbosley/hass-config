@@ -69,6 +69,6 @@ recorder: !include recorder.yaml
 
 group: !include_dir_merge_named group
 sensor: !include_dir_merge_list sensor
-automation: !include automations.yaml
+automation: !include_dir_merge_list automation
 script: !include_dir_merge_named script
 input_boolean: !include_dir_merge_named input_boolean

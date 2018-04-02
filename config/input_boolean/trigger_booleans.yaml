@@ -23,9 +23,9 @@ flash:
   name: Flash
   initial: off
 
-color_tornado:
-  name: Color Tornado!
-  initial: off
+#color_tornado:
+#  name: Color Tornado!
+#  initial: off
 
 guard_dog:
   name: Guard Dog

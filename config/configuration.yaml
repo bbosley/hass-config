@@ -122,6 +122,16 @@ mqtt:
   username: !secret MQTT_username
   password: !secret MQTT_password
 
+influxdb:
+  host: 172.17.0.7
+  port: 8086
+  username: admin
+  password: !secret influxdb_password
+  database: homeassistant
+  default_measurement: state
+  exclude:
+    domains:
+      - group
 
 group: !include_dir_merge_named group
 sensor: !include_dir_merge_list sensor

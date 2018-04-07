@@ -116,7 +116,7 @@ logger: !include logger.yaml
 recorder: !include recorder.yaml
 
 mqtt:
-  broker: 172.17.0.4
+  broker: !secret MQTT_broker
   port: 1883
   client_id: home-assistant
   keepalive: 60

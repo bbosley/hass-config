@@ -5,7 +5,7 @@ exclude:
   domains:
     - updater
     - automation
-    - device_tracker
+#    - device_tracker
     - group
     - scene
     - script

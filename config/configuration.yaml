@@ -122,6 +122,7 @@ mqtt:
   keepalive: 60
   username: !secret MQTT_username
   password: !secret MQTT_password
+  certificate: auto
   birth_message:
     topic: 'hass/status'
     payload: 'online'

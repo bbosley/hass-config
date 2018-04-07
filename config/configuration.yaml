@@ -117,12 +117,11 @@ recorder: !include recorder.yaml
 
 mqtt:
   broker: !secret MQTT_broker
-  port: 8883
+  port: 1883
   client_id: home-assistant
   keepalive: 60
   username: !secret MQTT_username
   password: !secret MQTT_password
-  certificate: auto
   birth_message:
     topic: 'hass/status'
     payload: 'online'

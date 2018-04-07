@@ -111,6 +111,7 @@ device_tracker:
     new_device_defaults:
       track_new_devices: False
       hide_if_away: False
+  - platform: owntracks_http
 
 logger: !include logger.yaml
 recorder: !include recorder.yaml

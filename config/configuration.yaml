@@ -135,7 +135,7 @@ mqtt:
     retain: true
 
 influxdb:
-  host: 172.17.0.7
+  host: !secret influxdb_server
   port: 8086
   username: admin
   password: !secret influxdb_password

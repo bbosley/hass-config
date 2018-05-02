@@ -1,7 +1,7 @@
 - platform: bayesian
   prior: 0.5
   name: 'Beau Presence'
-  probability_threshold: 0.9
+  probability_threshold: 0.8
   observations:
     - entity_id: 'device_tracker.beau'
       prob_given_true: 0.9
